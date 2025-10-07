@@ -131,10 +131,10 @@ jupyter --version
 
 #### Virtual env
 - [Virtualenv](https://pypi.org/project/virtualenv/)
-- Gemini: instalar junyper en ubuntu usando virtual env
 
 ### Jupyter
 - [Jupyter](https://jupyter.org/install)
+- Gemini: instalar junyper en ubuntu usando virtual env
 
 
 

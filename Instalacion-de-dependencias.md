@@ -48,7 +48,7 @@ sudo apt update
 
 ### 3.2 Instala Docker Engine, CLI, y Compose
 
-````bash
+```bash
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 

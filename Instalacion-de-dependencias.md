@@ -127,11 +127,11 @@ jupyter --version
 
 #### Docker
 - [Docker](https://docs.docker.com/engine/install/ubuntu/)
-- [Gemini] (como instalar docker en ubuntu)
+- Gemini: como instalar docker en ubuntu
 
 #### Virtual env
 - [Virtualenv](https://pypi.org/project/virtualenv/)
-- [Gemini] (instalar junyper en ubuntu usando virtual env)
+- Gemini: instalar junyper en ubuntu usando virtual env
 
 ### Jupyter
 - [Jupyter](https://jupyter.org/install)

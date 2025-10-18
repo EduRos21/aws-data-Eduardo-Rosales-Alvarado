@@ -2,7 +2,7 @@
 FROM python:3.11
 
 # Instalar dependencias necesarias
-RUN pip install --no-cache-dir  streamlit mysql-connector-python pandas  matplotlib seaborn dotenv boto3
+RUN pip install --no-cache-dir  streamlit mysql-connector-python pandas  matplotlib seaborn dotenv boto3 streamlit plotly matplotlib
 
 # Crear directorio de trabajo
 WORKDIR /app

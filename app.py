@@ -1,6 +1,7 @@
 import pandas as pd
 import boto3
 import io
+import os
 import streamlit as st
 import plotly.express as px
 import streamlit as st
@@ -13,8 +14,8 @@ st.set_page_config(page_title="ProjectX Dashboard", layout="wide")
 def load_data():
     s3 = boto3.client("s3")
  
-    bucket = "xideralaws-curso-bucket-eduardo"
-    key = "clean/Natalidad_Mexico.csv"
+    bucket = os.getenv("BUCKET_NAME")
+    key = os.getenv("SOURCE_DATA")
     res = s3.get_object(Bucket=bucket, Key=key)
     csv_content = res['Body'].read()
     

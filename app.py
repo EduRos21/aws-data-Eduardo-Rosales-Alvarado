@@ -14,9 +14,9 @@ st.set_page_config(page_title="ProjectX Dashboard", layout="wide")
 def load_data():
     s3 = boto3.client("s3")
  
-    bucket = os.getenv("BUCKET_NAME")
-    key = os.getenv("SOURCE_DATA")
-    res = s3.get_object(Bucket=bucket, Key=key)
+    #bucket = os.getenv("BUCKET_NAME")
+    #key = os.getenv("SOURCE_DATA")
+    res = s3.get_object(Bucket=os.getenv("BUCKET_NAME"), Key=os.getenv("SOURCE_DATA"))
     csv_content = res['Body'].read()
     
     return pd.read_csv(io.BytesIO(csv_content))

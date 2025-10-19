@@ -12,6 +12,7 @@ st.set_page_config(page_title="ProjectX Dashboard", layout="wide")
 
 @st.cache_data
 def load_data():
+    load_dotenv()
     s3 = boto3.client("s3")
  
     #bucket = os.getenv("BUCKET_NAME")
